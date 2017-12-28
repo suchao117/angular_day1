@@ -1,5 +1,6 @@
 # 学员管理
 - ryane-exam
+- su zhong chao modify
 
 用于管理学员学习状况数据
 
@@ -50,5 +51,5 @@ fix：解决项目BUG
 3. 点击左下角同步按钮
 
 # 作者
-- 姓名：Ryane Liu
-- Github：ryanemax
+- 姓名：su zhong chao
+- Github：https://github.com/suchao117/angular_day1
