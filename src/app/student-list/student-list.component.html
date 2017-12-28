@@ -3,6 +3,17 @@
 <button (click)="sortUsers('desc')" >倒序</button>
 <button (click)="sortUsers('random')">随机</button>
 <button (click)="addNewUser()">新增学生</button>
-<ul>
-  <li *ngFor="let user of users"><span (click)="deleteUserByID(user.id)">[删除]</span> ID:{{user.id}}，姓名：{{user.name}}，Github：{{user.github}}，性别：{{user.sex}}</li>
-</ul>
+
+<table >
+  <thead class="header">
+    <th>ID</th>
+    <th>姓名</th>
+    <th>Github</th>
+    <th>性别</th>
+    <th>操作</th>
+  </thead>
+  <tbody >
+    <tr *ngFor="let user of users"> <td>{{user.id}}</td><td>{{user.name}}</td><td>：{{user.github}}</td><td>{{user.sex}} </td><td><button (click)="deleteUserByID(user.id)" >删除</button></td>
+    </tr>
+  </tbody>
+</table>
