@@ -29,7 +29,7 @@ export class StudentListComponent implements OnInit {
       let ret = 0;
       if(type == "") {
 
-        return Math.random()>50 ? -1 : 1;
+        return Math.random() > 50 ? -1 : 1;
       }
          let ret = 0;
          if (a.id > b.id) {
@@ -42,13 +42,7 @@ export class StudentListComponent implements OnInit {
           ret = -1;
         }
         if(type == "desc") {
-          if(ret == -1){
-            ret = 1;
-          } else {
-            if(ret == 1){
-             ret = -1;
-            }
-          };
+          ret = ret > 0 ? -1 : 1;
         }
     
         return ret;
