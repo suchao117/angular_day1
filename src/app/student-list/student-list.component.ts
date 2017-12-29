@@ -24,14 +24,13 @@ export class StudentListComponent implements OnInit {
     this.users.sort(function(a,b){
      // console.log(a.id);
      // console.log(b.id);
-// console.log(a.id - b.id);
       //   return a.id - b.id;
       let ret = 0;
       if(type == "") {
 
         return Math.random() > 50 ? -1 : 1;
       }
-         let ret = 0;
+ 
          if (a.id > b.id) {
           console.log(1);
           ret = 1;
